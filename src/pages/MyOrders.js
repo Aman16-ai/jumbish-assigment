@@ -82,6 +82,7 @@ export default function MyOrders() {
   return (
     <div style={{ display: "flex" }}>
       <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "50%" }} className="orders-container">
+        <h2 style={{ marginLeft:"10vw", alignSelf:"flex-start"}}>Your Orders</h2>
         {
           orders.map((e, i) => {
             return <OrderCard key={i} idx={i} removeProduct={removeProduct} addProduct={addProduct} title={e.title} price={e.price} created_at={e.created_at} />
